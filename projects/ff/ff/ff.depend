@@ -1,0 +1,131 @@
+# depslib dependency file v1.0
+1742648250 source:c:\users\bublx\projects\ff\ff\main.c
+	"functions.h"
+	"structs.h"
+	<stdio.h>
+	<string.h>
+	<time.h>
+
+1742656245 source:c:\users\bublx\projects\ff\ff\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<string.h>
+	"structs.h"
+	"functions.h"
+	"generator.h"
+
+1742649299 c:\users\bublx\projects\ff\ff\structs.h
+
+1742655954 c:\users\bublx\projects\ff\ff\functions.h
+
+1742656148 source:c:\users\bublx\projects\ff\ff\functions.c
+	"functions.h"
+	"structs.h"
+	<string.h>
+	<errno.h>
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<io.h>
+
+1738761577 source:c:\users\kozhm\onedrive\Документы\projects\ff\functions.c
+	"functions.h"
+	"structs.h"
+	<string.h>
+	<errno.h>
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<io.h>
+
+1738760194 c:\users\kozhm\onedrive\Документы\projects\ff\functions.h
+
+1738717693 c:\users\kozhm\onedrive\Документы\projects\ff\structs.h
+
+1738760412 source:c:\users\kozhm\onedrive\Документы\projects\ff\main.c
+	"functions.h"
+	<stdio.h>
+
+1738756718 source:c:\users\kozhm\onedrive\Документы\projects\ff\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"structs.h"
+	"functions.h"
+
+1742650792 source:c:\users\bublx\projects\ff\ff\generator.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"generator.h"
+	"structs.h"
+	"functions.h"
+	<conio.h>
+
+1742654282 c:\users\bublx\projects\ff\ff\generator.h
+	"structs.h"
+
+1742409926 source:c:\users\kozhm\onedrive\Документы\projects\feno\functions.c
+	"functions.h"
+	"structs.h"
+	<string.h>
+	<errno.h>
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<io.h>
+
+1742378851 c:\users\kozhm\onedrive\Документы\projects\feno\functions.h
+
+1739487892 c:\users\kozhm\onedrive\Документы\projects\feno\structs.h
+
+1742409576 source:c:\users\kozhm\onedrive\Документы\projects\feno\generator.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"generator.h"
+	"structs.h"
+	"functions.h"
+	<conio.h>
+
+1742412147 c:\users\kozhm\onedrive\Документы\projects\feno\generator.h
+
+1742398584 source:c:\users\kozhm\onedrive\Документы\projects\feno\main.c
+	"functions.h"
+	"structs.h"
+	<stdio.h>
+	<string.h>
+	<time.h>
+
+1742413838 source:c:\users\kozhm\onedrive\Документы\projects\feno\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"structs.h"
+	"functions.h"
+	"generator.h"
+
+1742416211 source:c:\users\kozhm\onedrive\Документы\projects\feno\sorting.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	<string.h>
+	"structs.h"
+	"functions.h"
+	"generator.h"
+
+1742655634 source:c:\users\bublx\projects\ff\ff\sorting.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	<string.h>
+	"structs.h"
+	"functions.h"
+	"generator.h"
+
