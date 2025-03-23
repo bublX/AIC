@@ -100,11 +100,13 @@ flypas * ReadMassive(const char * fname, flypas * HUMAN, int * humansize)//функц
             printf("errno: %d ---> ", errno);
             perror(fname);
         }
+    fseek(p, -1 * sizeof(flypas), SEEK_END);
+    fread(&NEED, sizeof(flypas), 1, p);
+    HUMAN = (flypas *)malloc(NEED.ID * sizeof(flypas));
     rewind(p);
     while (fread(&NEED, sizeof(flypas), 1, p) == 1)
         {
             deepcopy(HUMAN + i, &NEED);
-            HUMAN = (flypas *)realloc(HUMAN, (i + 2) * sizeof(flypas));
             if (HUMAN == NULL)
             {
                 perror("Error is");
@@ -112,7 +114,6 @@ flypas * ReadMassive(const char * fname, flypas * HUMAN, int * humansize)//функц
             }
             i++;
         }
-    HUMAN = (flypas *) realloc(HUMAN, i * sizeof(flypas));
     * humansize = i - 1;
     fclose(p);
     return HUMAN;
@@ -262,8 +263,56 @@ void QuickSort(flypas *HUMAN, int low, int high, int flag)
         QuickSort(HUMAN, pivot + 1, high, flag);
     }
 }
+/*
+void Graphics(const char * ftname)
+{
+    int i = 0;
+    timecheck TIMES;
+    timecheck * y = malloc(50 * sizeof(timecheck));
+    FILE * p = fopen(ftname, "r");
+    if (!p)
+    {
+        printf("errno: %d ---> ", errno);
+        perror(ftname);
+    }
+    rewind(p);
+    while(fread(&TIMES, sizeof(timecheck), 1, p) == 1)
+    {
+        *(y + i) = TIMES;
+        i++;
+    }
+    fclose (p);
 
+    FILE *file = fopen("data.txt", "w");
+    if (!file)
+    {
+        printf("Error");
+    }
+    printf("Choose what graphic you want to see?");
+    int a = menuGraphic();
+    switch(a)
+    {
+        case 0:
+            for (int j = 0; j < i; j++)
+                if (strcmp(y[j].typesort, "ShakeSort") == 0)
+                fprintf(file, "%d %f\n", y[j].quantity, y[j].sorttime);
+            break;
+        case 1:
+            for (int j = 0; j < i; j++)
+                if (strcmp(y[j].typesort, "MergeSort") == 0)
+                fprintf(file, "%d %f\n", y[j].quantity, y[j].sorttime);
+            break;
+        case 2:
+            for (int j = 0; j < i; j++)
+                if (strcmp(y[j].typesort, "QuickSort") == 0)
+                fprintf(file, "%d %f\n", y[j].quantity, y[j].sorttime);
+            break;
+    }
+    fclose(file);
 
+    int result = system("gnuplot -p -e \"set title 'Sort'; set xlabel 'Size'; set ylabel 'Times (sec)'; plot 'data.txt' using 1:2 with linespoints title 'MergeSort'\"");
+
+}*/
 void AnySort(int humansize, int casechoose, flypas * HUMAN, const char * ftname, const char * fname, int flag)
 {
     clock_t start, end;

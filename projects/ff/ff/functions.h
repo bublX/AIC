@@ -5,6 +5,7 @@ void menu();
 int menuSearch();
 int menuUpdateFIO();
 int menuUpdate();
+int menuGraphic();
 
 int * Compare();
 void FillMassive();

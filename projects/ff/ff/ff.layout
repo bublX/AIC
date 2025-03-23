@@ -2,26 +2,17 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="sorting.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="main.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="8075" topLine="0" />
+			<Cursor1 position="7034" topLine="0" />
 		</Cursor>
 		<Folding>
-			<Collapse line="10" />
-			<Collapse line="23" />
-			<Collapse line="58" />
-			<Collapse line="93" />
-			<Collapse line="121" />
-			<Collapse line="166" />
-			<Collapse line="178" />
-			<Collapse line="213" />
-			<Collapse line="256" />
-			<Collapse line="267" />
+			<Collapse line="11" />
 		</Folding>
 	</File>
-	<File name="functions.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+	<File name="functions.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="14470" topLine="18" />
+			<Cursor1 position="12487" topLine="6" />
 		</Cursor>
 		<Folding>
 			<Collapse line="13" />
@@ -36,31 +27,28 @@
 			<Collapse line="348" />
 			<Collapse line="405" />
 			<Collapse line="451" />
+			<Collapse line="480" />
 		</Folding>
 	</File>
-	<File name="functions.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="332" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="menu.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1730" topLine="55" />
-		</Cursor>
-		<Folding>
-			<Collapse line="96" />
-			<Collapse line="144" />
-			<Collapse line="191" />
-			<Collapse line="237" />
-			<Collapse line="282" />
-		</Folding>
-	</File>
-	<File name="structs.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
+	<File name="structs.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="555" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="generator.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+	<File name="menu.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2841" topLine="69" />
+		</Cursor>
+		<Folding>
+			<Collapse line="113" />
+			<Collapse line="161" />
+			<Collapse line="208" />
+			<Collapse line="254" />
+			<Collapse line="299" />
+			<Collapse line="364" />
+		</Folding>
+	</File>
+	<File name="generator.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="8772" topLine="0" />
 		</Cursor>
@@ -78,17 +66,28 @@
 			<Collapse line="235" />
 		</Folding>
 	</File>
-	<File name="main.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="sorting.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="7034" topLine="0" />
+			<Cursor1 position="8940" topLine="51" />
 		</Cursor>
 		<Folding>
-			<Collapse line="11" />
+			<Collapse line="10" />
+			<Collapse line="23" />
+			<Collapse line="58" />
+			<Collapse line="93" />
+			<Collapse line="179" />
+			<Collapse line="214" />
+			<Collapse line="257" />
 		</Folding>
 	</File>
-	<File name="generator.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="generator.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="115" topLine="0" />
+			<Cursor1 position="118" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="functions.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="156" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

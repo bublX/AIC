@@ -6,7 +6,7 @@
 	<string.h>
 	<time.h>
 
-1742656245 source:c:\users\bublx\projects\ff\ff\menu.c
+1742693165 source:c:\users\bublx\projects\ff\ff\menu.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
@@ -18,9 +18,9 @@
 
 1742649299 c:\users\bublx\projects\ff\ff\structs.h
 
-1742655954 c:\users\bublx\projects\ff\ff\functions.h
+1742690928 c:\users\bublx\projects\ff\ff\functions.h
 
-1742656148 source:c:\users\bublx\projects\ff\ff\functions.c
+1742689930 source:c:\users\bublx\projects\ff\ff\functions.c
 	"functions.h"
 	"structs.h"
 	<string.h>
@@ -66,7 +66,7 @@
 	"functions.h"
 	<conio.h>
 
-1742654282 c:\users\bublx\projects\ff\ff\generator.h
+1742691111 c:\users\bublx\projects\ff\ff\generator.h
 	"structs.h"
 
 1742409926 source:c:\users\kozhm\onedrive\Документы\projects\feno\functions.c
@@ -120,7 +120,7 @@
 	"functions.h"
 	"generator.h"
 
-1742655634 source:c:\users\bublx\projects\ff\ff\sorting.c
+1742693546 source:c:\users\bublx\projects\ff\ff\sorting.c
 	<stdio.h>
 	<time.h>
 	<stdlib.h>

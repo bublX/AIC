@@ -424,7 +424,7 @@ void SearchNote(const char * fname, const char * ftname, Comp CMP) //функция пои
     {
         CMP(INDEX, &NEED, i, s, l);
     }
-    //*l = 0;
+    *l = 0;
 
     rewind(p);
     system("cls");

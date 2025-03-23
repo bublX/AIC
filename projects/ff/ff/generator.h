@@ -2,8 +2,12 @@
 #define GENERATOR_H_INCLUDED
 #include "structs.h"
 void menuSort();
+void Graphics();
+
 void AnySort();
+
 void MergeSort();
+
 
 void ShakerSort();
 

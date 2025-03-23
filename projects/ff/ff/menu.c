@@ -10,50 +10,63 @@
 void menu(const char *fname, const char *ftname) //основное меню, в котором пользователь осуществляет выбор программы
 {
     char mas[12][30], button;
-    point a = {0, 0};
+    point a = {23, 0};
+    point b = {24, 0};
+    point c = {25, 0};
     do
     {
-        sprintf(mas[0], " Add note to file            ");
-        sprintf(mas[1], " Delete note from file       ");
-        sprintf(mas[2], " Find a note in file         ");
-        sprintf(mas[3], " Edit note in file           ");
-        sprintf(mas[4], " Print file as table         ");
-        sprintf(mas[5], " Print time sort             ");
-        sprintf(mas[6], " Create file                 ");
-        sprintf(mas[7], " Free file                   ");
-        sprintf(mas[8], " Generate person             ");
-        sprintf(mas[9], " Sort file                   ");
-        sprintf(mas[10]," Finish program              ");
+        sprintf(mas[0], " Add note to file     |    ");
+        sprintf(mas[1], " Delete note from file|    ");
+        sprintf(mas[2], " Find a note in file  |    ");
+        sprintf(mas[3], " Edit note in file    |    ");
+        sprintf(mas[4], " Print file as table  |    ");
+        sprintf(mas[5], " Print time sort      |    ");
+        sprintf(mas[6], " Create file          |    ");
+        sprintf(mas[7], " Free file            |    ");
+        sprintf(mas[8], " Generate person      |    ");
+        sprintf(mas[9], " Sort file            |    ");
+        sprintf(mas[10]," Show graphics        |    ");
+        sprintf(mas[11]," Finish program       |    ");
 
-        mas[a.y][a.x] = '>';
+        mas[a.y][a.x] = '<';
+        mas[b.y][b.x] = '-';
+        mas[c.y][c.x] = '|';
         system("cls");
 
         printf("Choose what you want to do(to choose press E):\n");
 
         for (int i = 0; i < 11; i++)
         {
-            printf("\n");
+            printf("-----------------------\n");
             printf("%s\n", mas[i]);
         }
-
+        printf("-----------------------\n");
         button = getch();
 
         if ((button == 'w') && (a.y == 0))
         {
             a.y = 10;
+            b.y = 10;
+            c.y = 10;
         }
         else if (button == 'w')
         {
-                  a.y--;
+            a.y--;
+            b.y--;
+            c.y--;
         }
 
         if ((button == 's') && (a.y == 10))
         {
             a.y = 0;
+            b.y = 0;
+            c.y = 0;
         }
         else if (button == 's')
         {
             a.y++;
+            b.y++;
+            c.y++;
         }
     }
     while (button != 'e');
@@ -89,6 +102,10 @@ void menu(const char *fname, const char *ftname) //основное меню, в котором поль
                 menuSort(ReadMassive, fname, ftname);
                 break;
             case 10:
+                //Graphics(ftname);
+                menu(fname, ftname);
+                break;
+            case 11:
                 exit(0);
                 break;
         }
@@ -343,4 +360,49 @@ void menuSort(flypas *(*arrayCreator)(const char *, flypas *, int *),const char 
             menu(fname, ftname);
             break;
     }
+}
+int menuGraphic() //меню для выбора изменяемого поля ФИО
+{
+    char mas[3][30], button;
+    int i;
+    point a = {0, 0};
+
+    do
+    {
+        sprintf(mas[0], " ShakeSort graphic          ");
+        sprintf(mas[1], " MergeSort graphic          ");
+        sprintf(mas[2], " QuickSort graphic          ");
+
+        mas[a.y][a.x] = '>';
+        system("cls");
+
+        printf("Choose what you want to do(to choose press E):\n");
+
+        for (i = 0; i < 3; i++)
+        {
+            printf("%s\n", mas[i]);
+        }
+
+        button = getch();
+
+        if ((button == 'w') && (a.y == 0))
+        {
+            a.y = 2;
+        }
+        else if (button == 'w')
+        {
+                  a.y--;
+        }
+
+        if ((button == 's') && (a.y == 2))
+        {
+            a.y = 0;
+        }
+        else if (button == 's')
+        {
+            a.y++;
+        }
+    }
+    while (button != 'e');
+    return a.y;
 }
